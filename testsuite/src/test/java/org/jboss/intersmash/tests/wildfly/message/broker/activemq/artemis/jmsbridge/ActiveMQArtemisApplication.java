@@ -77,7 +77,7 @@ public class ActiveMQArtemisApplication implements ActiveMQOperatorApplication, 
 						// these size & image are set by DeploymentPlanBuilder by default, set here as an API demonstration
 						.withSize(1)
 						.withImage(IntersmashConfig.activeMQImageUrl())
-						.withRequireLogin(false)
+						.withRequireLogin(true)
 						.withPersistenceEnabled(false)
 						.withJournalType("nio")
 						.withMessageMigration(false)

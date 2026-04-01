@@ -125,7 +125,7 @@ public class WildflyJmsBridgeApplication implements WildflyImageOpenShiftApplica
 		environmentVariables
 				.add(new EnvVarBuilder().withName("ARTEMIS_USER").withValue(ActiveMQArtemisApplication.ADMIN_USER).build());
 		environmentVariables.add(
-				new EnvVarBuilder().withName("ARTEMIS_PASSWORD").withValue(ActiveMQArtemisApplication.ADMIN_PASSWORD).build());
+				new EnvVarBuilder().withName("ARTEMIS_PASSWORD").withValue(ActiveMQArtemisApplication.ADMIN_PASSWORD + "-non-valid").build());
 		environmentVariables.add(
 				new EnvVarBuilder().withName("ARTEMIS_QUEUE").withValue(ActiveMQArtemisApplication.QUEUE_NAME).build());
 		/**
